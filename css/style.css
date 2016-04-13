@@ -44,7 +44,7 @@ img {
 .logo {
   height: 249px;
   width: 100%;
-  background-image: url(../img/logo.png);
+  background-image: url(../img/logo2.png);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -63,3 +63,31 @@ img {
   position: absolute;
   top:200px;
    }
+
+.sicons{
+  background-image: url("../img/Linkedin.png"),url("../img/Github.png"),url("../img/Twitter.png");
+  position: absolute;
+  top: 93%;
+  left: 57%;
+  margin-top: -150px;
+  height: 50px;
+  width: 195px;
+  display: inline-block;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left, center, right;
+}
+
+.sicons:hover{
+  background-image: url("../img/Linkedin_color.png"),url("../img/Github_color.png"),url("../img/Twitter_color.png");
+  position: absolute;
+  top: 93%;
+  left: 57%;
+  margin-top: -150px;
+  height: 50px;
+  width: 195px;
+  display: inline-block;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left, center, right; 
+}
