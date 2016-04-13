@@ -1,0 +1,65 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  color: #ccc;
+  weight: 300; }
+
+figure {
+  margin: auto; }
+
+.content article {
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center; }
+
+img {
+  max-width: 100%; }
+
+/*Parallax*/
+
+.main-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/main2.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  
+}
+
+.back-box {
+  width: 960px;
+  height: 350px;
+  background-image: url(../img/cloud.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 45%;
+  top:80px;
+  margin-left: -480px; }
+
+.logo {
+  height: 249px;
+  width: 100%;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  margin-top: -150px; }
+
+.fore-box {
+  width: 100%;
+  height: 530px;
+  
+  background-image: url(../img/cutout2.png);
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top:200px;
+   }
