@@ -74,7 +74,50 @@ img {
   display: inline-block; 
 }
 
+section{
+    padding:100px 0px 5px 5px;
+    overflow: auto;
+    height: 1000px;
+}
 
+h1.section-heading{
+    margin: 0px;
+    margin-top: -10px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 62px;
+    font-weight: 900;
+    background-color: #fa6862;
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+}
+
+h2.second-heading{
+    margin: 0px;
+    margin-top: -10px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #565adc;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+ 
 /*FADE IN EFFECT at START*/
 
 /* make keyframes that tell the start state and the end state of our object */
@@ -115,16 +158,17 @@ img {
   animation-delay: 2s;
 }
 
-/*NAVBAR*/
 
+/*NAVBAR*/
 
 .main-nav {
   position: relative;
   background: #000;
-  height: 50px;
-  z-index: 150;
+  height: 5px;
+  z-index: 200;
   margin-bottom: -50px;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  font-family: 'Roboto',sans-serif;
 }
 
 .main-nav-scrolled {
@@ -132,9 +176,7 @@ img {
   width: 100%;
   top: 0;
   background: black;
-}
-.navbar{
-        border: none;
-        
+  margin-bottom: -50px;
+  font-family: 'Roboto',sans-serif;
 }
 
