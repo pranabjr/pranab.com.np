@@ -4,7 +4,7 @@ $(window).scroll(function(){
 
 
     $('.fore-box').css({
-      'transform' : 'translate(0px, -'+ wScroll /21 +'%)'
+      'transform' : 'translate(0px, -'+ wScroll /32 +'%)'
     });
     
     $('.logo').css({
