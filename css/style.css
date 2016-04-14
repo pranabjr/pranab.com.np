@@ -22,7 +22,7 @@ img {
 .main-box {
   position: relative;
   height: 600px;
-  background-image: url(../img/main2.jpg);
+  background-image: url(../img/main3.jpg);
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -33,12 +33,12 @@ img {
 .back-box {
   width: 960px;
   height: 350px;
-  background-image: url(../img/cloud.png);
+  background-image: url(../img/cloud2.png);
   background-repeat: no-repeat;
   background-position: top left;
   position: absolute;
-  left: 45%;
-  top:80px;
+  left: 46%;
+  top:70px;
   margin-left: -480px; }
 
 .logo {
@@ -65,29 +65,76 @@ img {
    }
 
 .sicons{
-  background-image: url("../img/Linkedin.png"),url("../img/Github.png"),url("../img/Twitter.png");
   position: absolute;
   top: 93%;
   left: 57%;
-  margin-top: -150px;
+  margin-top: -135px;
   height: 50px;
-  width: 195px;
-  display: inline-block;
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: left, center, right;
+  width: 212px;
+  display: inline-block; 
 }
 
-.sicons:hover{
-  background-image: url("../img/Linkedin_color.png"),url("../img/Github_color.png"),url("../img/Twitter_color.png");
-  position: absolute;
-  top: 93%;
-  left: 57%;
-  margin-top: -150px;
-  height: 50px;
-  width: 195px;
-  display: inline-block;
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: left, center, right; 
+
+/*FADE IN EFFECT at START*/
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 }
+
+.fade-in.one {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay:1.5s;
+  animation-delay: 1.5s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/*NAVBAR*/
+
+
+.main-nav {
+  position: relative;
+  background: #000;
+  height: 50px;
+  z-index: 150;
+  margin-bottom: -50px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+}
+.navbar{
+        border: none;
+        
+}
+
