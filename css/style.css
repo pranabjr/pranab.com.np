@@ -17,6 +17,7 @@ figure {
 img {
   max-width: 100%; }
 
+
 /*Parallax*/
 
 .main-box {
@@ -77,7 +78,7 @@ img {
 section{
     padding:100px 0px 5px 5px;
     overflow: auto;
-    
+    background: #fefefe;
 }
 
 h1.section-heading{
@@ -100,13 +101,13 @@ h2.second-heading{
     font-family: 'Roboto',sans-serif;
     font-size: 16px;
     font-weight: 500;
-    background-color: #565adc;
-    padding: 15px 30px;
+    background-color: #424242;
+    padding: 22px 30px;
     border-radius: 4px;
     text-align: center;
     color: #fff;
     display: inline-block;
-    height: 50px;
+    height: 65px;
 }
 
 p{
@@ -163,8 +164,8 @@ p{
 
 .main-nav {
   position: relative;
-  background: #000;
-  height: 5px;
+  background: #424242;
+  height: 50px;
   z-index: 200;
   margin-bottom: -50px;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
@@ -175,8 +176,97 @@ p{
   position: fixed;
   width: 100%;
   top: 0;
-  background: black;
+  background: #424242;
   margin-bottom: -50px;
   font-family: 'Roboto',sans-serif;
+  height: 20px;
 }
 
+.nav li a{
+    color: white;
+}
+
+.navbar-nav{
+    padding: 0px 50px;
+}
+
+section.skill_back{
+    height: 640px;
+    background-image: url(../img/skill_back.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+;}
+
+.skill_title{
+    float: left;
+    width: 50%;
+    min-height: 180px;
+    background-color: #424242;
+    z-index: 100;
+    -webkit-border-radius: 4px 0 0 4px;
+}
+
+.skill_perc{
+    z-index: 90;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.skill_set{
+    min-height: 180px;
+    width: 100%;
+    border-radius: 4px;
+    background: white;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.skill_name{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 75px;
+    width: 100%;
+    float: left;
+    font-family: 'Roboto',sans-serif;
+} 
+
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-top: 40px;
+    text-align: center;
+}
+.percent{
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+    font-size: 25px;
+    color: #3e3e3e;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    border-color: transparent transparent transparent #424242;
+    border-style: solid;
+    border-width: 9px;
+    width: 0;
+    height: 0;
+    float: right;
+    margin-right: -18px;
+    margin-top: 75px;
+    position: relative;
+}
